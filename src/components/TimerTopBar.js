@@ -1,7 +1,11 @@
 import React from "react";
 import Timer from "./Timer1";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { useNavigate } from "react-router-dom";
 
 export default function TopBar({ gameOver, setTime, bmb, timer }) {
+  const navigate = useNavigate();
   return (
     <div
       style={{
@@ -14,17 +18,15 @@ export default function TopBar({ gameOver, setTime, bmb, timer }) {
       }}
     >
 
-      <div style={{ color: "white", fontSize: 20 }}>
-      <span role="img" aria-label="flag" style={{ paddingRight: 10 }}>
-      
-      </span>
+      <div>
+        <FontAwesomeIcon icon={faHome} onClick={() => { navigate('/') }} />
       </div>
       <div style={{ color: "white", fontSize: 20 }}>
-      <span role="img" aria-label="flag" style={{ paddingRight: 10 }}>
-      🚩
-      </span>
-      {bmb}
-    </div>
+        <span role="img" aria-label="flag" style={{ paddingRight: 10 }}>
+          🚩
+        </span>
+        {bmb}
+      </div>
       <Timer gameOver={gameOver} sendTime={setTime} timer={timer} />
     </div>
   );

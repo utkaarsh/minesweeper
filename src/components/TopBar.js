@@ -19,11 +19,11 @@ export default function TopBar({ gameOver, setTime, bmb }) {
       }}
     >
 
-      <div style={{ color: "white", fontSize: 20 }}>
+      {/* <div style={{ color: "white", fontSize: 20 }}>
       <span role="img" aria-label="flag" style={{ paddingRight: 10 }}>
       
       </span>
-      </div>
+      </div> */}
       <div>
       <FontAwesomeIcon icon={faHome} onClick={()=>{navigate('/')}} />
       </div>
