@@ -42,6 +42,7 @@ export default function Board(props) {
           // }, 500);
         }
       }
+      //Losing state
       setGameOver(true);
     } else {
       // newBoardValues[x][y].revealed = true;
@@ -51,6 +52,11 @@ export default function Board(props) {
       }
       setBoard(newBoardValues.arr);
       setNonMinesCount(newBoardValues.newNonMinesCount);
+      //Winning state
+      if (newBoardValues.newNonMinesCount===0) {
+        setGameOver(true);
+        alert("Congrats! You've successfully outsmarted the mines!");
+      }
     }
   };
 
