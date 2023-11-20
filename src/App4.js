@@ -7,8 +7,8 @@ function App4() {
     <div className="App">
       {/* <h2 style={{ fontFamily: "Fredoka One" }}>Minesweeper</h2> */}
       
-      <Board y='18' x='25' bombs='25' timer='10'/>
-      {/* <Board y='18' x='25' bombs='25' timer='120'/> */}
+      {/* <Board y='18' x='25' bombs='25' timer='10'/> */}
+      <Board y='18' x='25' bombs='25' timer='120'/>
     </div>
   );
 }
