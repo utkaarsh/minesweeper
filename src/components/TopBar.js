@@ -29,7 +29,7 @@ export default function TopBar({ gameOver, setTime, bmb }) {
       </div>
       <div style={{ color: "white", fontSize: 20 }}>
       <span role="img" aria-label="flag" style={{ paddingRight: 10 }}>
-      🚩
+      💣
       </span>
       {bmb}
     </div>

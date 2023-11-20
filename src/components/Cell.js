@@ -12,7 +12,6 @@ export default function Cell({ data, updateBoard, flagCell }) {
       justifyContent: "center",
       alignItems: "center",
       fontWeight: 800,
-      // fontSize: 30,
       fontSize: 25,
       cursor: "pointer",
       background: data.revealed

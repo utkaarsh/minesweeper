@@ -7,7 +7,7 @@ function App3() {
     <div className="App">
       {/* <h2 style={{ fontFamily: "Fredoka One" }}>Minesweeper</h2> */}
       
-      <Board y='10' x='15' bombs='20' timer='10'/>
+      <Board y='10' x='15' bombs='10' timer='60'/>
       {/* <Board y='10' x='15' bombs='20' timer='60'/> */}
     </div>
   );
