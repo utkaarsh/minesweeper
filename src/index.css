@@ -47,3 +47,25 @@ code {
   font-size: 25px;
   text-align: center; 
  }
+
+ .instruction{
+  background: burlywood;
+    border-radius: 15px;
+    padding: 10px;
+ }
+
+ .infobox{
+  background: lightskyblue;
+  text-align: center;
+  letter-spacing: 1px;
+  width: 30rem;
+  margin: 20px;
+  margin-top: 20px;
+  position: absolute;
+  height: 24rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  box-shadow: 21px 22px 38px -8px;
+
+}
